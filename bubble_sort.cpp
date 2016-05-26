@@ -17,7 +17,7 @@ int main(int argc, char const *argv[])
 }
 
 void bubble_sort(int A[], int n) {
-  for (int k = 0; k < n - 1; k++)
+  for (int k = 0; k < n - 2; k++)
   {    
     int sorted = 0;
     for (int i = 0; i < n - k - 1; i++)
