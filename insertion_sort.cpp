@@ -9,7 +9,7 @@ int main(int argc, char const *argv[])
   int array[] = {6, 4, 8, 3, 9, 5, 7};  
   int n = 7;
   insertion_sort(array, n);
-  for (int i = 0; i < n; ++i)
+  for (int i = 0; i < n; i++)
   {
     cout << array[i] << " ";
   }
