@@ -1,8 +1,9 @@
-# inp = [7, 3, 2, 4, 8, 5, 3, 5, 9, 3]
-inp = [4, 6, 3, 5, 1, 2]
-n = len(inp)
+inp = [8,22,7,9,31,19,5,13]
 
+n = len(inp)
+swaps = 0
 def bubble_sort(array, size):
+  global swaps
   for i in range(0, size - 2):
     sorted = True
     print array
@@ -11,9 +12,11 @@ def bubble_sort(array, size):
         temp = array[j]
         array[j] = array[j + 1]
         array[j + 1] = temp
+        swaps += 1
         sorted = False
     if sorted:
       break
   return array
 
 print bubble_sort(inp, n)
+print swaps

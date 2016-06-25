@@ -1,2 +1,7 @@
 *.exe
 *.stackdump
+*.class
+*.txt
+test.*
+sample.*
+*.swp
