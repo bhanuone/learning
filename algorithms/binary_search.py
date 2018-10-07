@@ -9,8 +9,7 @@ def binary_search(array, el):
       lo = mid + 1
     else:
       hi = mid - 1
-    mid = (hi + lo)/2        
   return -1
 
-print bsearch([0, 5, 13, 19, 22, 41, 55, 68, 72, 81, 98], 55)
+print binary_search([0, 5, 13, 19, 22, 41, 55, 68, 72, 81, 98], 55)
             
