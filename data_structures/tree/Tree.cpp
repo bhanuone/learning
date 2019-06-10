@@ -94,11 +94,19 @@ bool Search(Node * root, int data) {
 int main(int argc, char const *argv[])
 {
   Node * root;
-  root = Insert(root, 3);
-  root = Insert(root, 4);
-  root = Insert(root, 1);
-  root = Insert(root, 2);
-  root = Insert(root, 4);
+
+  int N;
+  cin >> N;
+  while(N > 0) {
+    int tmp;
+    cin >> tmp;
+    root = Insert(root, tmp);
+  }
+  // root = Insert(root, 3);
+  // root = Insert(root, 4);
+  // root = Insert(root, 1);
+  // root = Insert(root, 2);
+  // root = Insert(root, 4);
   inOrder(root);
   cout << endl;
   preOrder(root);

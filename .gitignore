@@ -6,3 +6,5 @@ test.*
 sample.*
 *.swp
 *.out
+.ipynb_checkpoints
+

@@ -9,7 +9,7 @@ def construct_segment_tree(array):
   return seg_tree_array
 
 def construct_segment(current_index, start_index, end_index, array, seg_tree_array):
-  print seg_tree_array
+  print(seg_tree_array)
   if start_index == end_index:
     seg_tree_array[current_index] = array[start_index]
   else:
@@ -20,5 +20,5 @@ def construct_segment(current_index, start_index, end_index, array, seg_tree_arr
   return seg_tree_array[current_index]
 
 seg_tree = construct_segment_tree([i for i in range(1, 3)])
-print seg_tree
-print len(seg_tree)
+print(seg_tree)
+print(len(seg_tree))

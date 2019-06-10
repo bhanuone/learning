@@ -12,7 +12,7 @@ class BstNode {
 
 class BinaryTree {	
 	private BstNode root = null;
-  
+ 
   public BstNode getRoot() {
     return this.root;
   }
@@ -20,13 +20,13 @@ class BinaryTree {
   public boolean isEmpty() {
     return this.root == null;
   }
-  public BstNode insert(BstNode node, int data) {
+  public void insert(int data) {
     BstNode temp = new BstNode(data);
-    if(this.isEmpty()) {this.root = temp; return;}    
+    if(this.isEmpty()) {this.root = temp;return;}    
     else if(data <= this.root.data) {
-      this.root.left = this.insert(this.root, data)
+      this.root.left = this.insert(data);
     } else {
-      this.root.right
+      this.root.right = this.insert(data);
     }
 
   }
@@ -42,13 +42,13 @@ class BST {
   public static void main(String[] args) {
     BinaryTree bst = new BinaryTree();
     // System.out.println(bst.isEmpty());
-    bst.insert(bst.getRoot(), 1);    
+    bst.insert(1);    
     // System.out.println(bst.isEmpty());
-    bst.insert(bst.getRoot(), 2);
+    bst.insert(2);
     // System.out.println(bst.isEmpty());
-    bst.insert(bst.getRoot(), 3);
+    bst.insert(3);
     // System.out.println(bst.isEmpty());
     // bst.inOrder(bst.getRoot());
-    bst.insert(bst.getRoot(), 8);
+    bst.insert(8);
   }
 }
